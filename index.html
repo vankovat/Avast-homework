@@ -1,39 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>Homework</title>
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="main.css">
-</head>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="main.css" />
+  </head>
 
-<body>
+  <body>
     <div class="ipm-ui">
-        <!-- HTML content goes here -->
+      <!-- HTML content goes here -->
+      <h1>Please choose the length of your plan</h1>
+
+      <div class="list">
+        <p class="list__title">Avast Driver Updater</p>
+        <ul>
+          <li>
+            Auto-scan your computer for outdated, missing, or corrupt drivers
+          </li>
+          <li>
+            Check more than 500,000 drivers and software updates
+          </li>
+          <li>
+            Keep your PC and devices running optimally with one click
+          </li>
+        </ul>
+      </div>
+
+      <form>
+        <div id="plans" class="plans">
+          <ul>
+            <li class="plan">
+              <div class="plan__title">
+                <input type="radio" name="plan" /> 1-year subscription
+              </div>
+              <div class="plan__details">
+                <div class="plan__price">$0.99 / month</div>
+                <div>Billed as $11.88 / 1 year</div>
+              </div>
+            </li>
+            <li class="plan plan--selected">
+              <div class="plan__title">
+                <input type="radio" name="plan" checked="checked" /> 2-year
+                subscription
+              </div>
+              <div class="plan__details">
+                <div class="plan__price">$1.99 / month</div>
+                <div>Billed as $23.88 / 2 years</div>
+              </div>
+            </li>
+            <li class="plan">
+              <div class="plan__title">
+                <input type="radio" name="plan" /> 3-years subscription
+              </div>
+              <div class="plan__details">
+                <div class="plan__price">$2.99 / month</div>
+                <div>Billed as $35.88 / 3 years</div>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="last-part">
+          <button class="button" href="#" id="plans_submit">BUY NOW</button>
+          <p>30-day money-back guarantee</p>
+        </div>
+      </form>
     </div>
 
     <script>
-        var __DATA__ = {
-            planSelector: [{
-                monthlyPrice: '$0.99',
-                yearlyPrice: '$11.88',
-                url: 'https://url-1-year.com'
-
-            }, {
-                monthlyPrice: '$1.99',
-                yearlyPrice: '$23.88',
-                url: 'https://url-2-years.com'
-            }, {
-                monthlyPrice: '$2.99',
-                yearlyPrice: '$35.88',
-                url: 'https://url-3-years.com'
-            }]
-        };
+      var __DATA__ = {
+        planSelector: [
+          {
+            title: "1-year subscription",
+            monthlyPrice: "$0.99",
+            yearlyPrice: "$11.88 / 1 year",
+            url: "https://url-1-year.com",
+          },
+          {
+            title: "2-year subscription",
+            recommended: true,
+            monthlyPrice: "$1.99",
+            yearlyPrice: "$23.88 / 2 years",
+            url: "https://url-2-years.com",
+          },
+          {
+            title: "3-years subscription",
+            monthlyPrice: "$2.99",
+            yearlyPrice: "$35.88 / 3 years",
+            url: "https://url-3-years.com",
+          },
+        ],
+      };
     </script>
     <script src="main.js"></script>
-</body>
-
+  </body>
 </html>

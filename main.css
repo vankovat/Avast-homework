@@ -1,5 +1,194 @@
 .ipm-ui {
-    width: 1008px;
-    height: 632px;
-    background: salmon;
+  height: 632px;
+  width: 1007px;
+
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  color: #ffffff;
+
+  background: #0b083c;
+  background: -moz-linear-gradient(
+    -45deg,
+    #0b083c 0%,
+    #0d093e 0%,
+    #2e256e 70%,
+    #2e256e 70%,
+    #3b2e7c 100%
+  );
+  background: -webkit-gradient(
+    left top,
+    right bottom,
+    color-stop(0%, #0b083c),
+    color-stop(0%, #0d093e),
+    color-stop(70%, #2e256e),
+    color-stop(70%, #2e256e),
+    color-stop(100%, #3b2e7c)
+  );
+  background: -webkit-linear-gradient(
+    -45deg,
+    #0b083c 0%,
+    #0d093e 0%,
+    #2e256e 70%,
+    #2e256e 70%,
+    #3b2e7c 100%
+  );
+  background: -o-linear-gradient(
+    -45deg,
+    #0b083c 0%,
+    #0d093e 0%,
+    #2e256e 70%,
+    #2e256e 70%,
+    #3b2e7c 100%
+  );
+  background: -ms-linear-gradient(
+    -45deg,
+    #0b083c 0%,
+    #0d093e 0%,
+    #2e256e 70%,
+    #2e256e 70%,
+    #3b2e7c 100%
+  );
+  background: linear-gradient(
+    135deg,
+    #0b083c 0%,
+    #0d093e 0%,
+    #2e256e 70%,
+    #2e256e 70%,
+    #3b2e7c 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0b083c', endColorstr='#3b2e7c', GradientType=1 );
+}
+
+h1 {
+  text-align: center;
+  font-size: 25px;
+  padding-top: 60px;
+  padding-bottom: 70px;
+  font-weight: 600;
+}
+
+/*List with check marks*/
+
+.list__title {
+  padding-left: 85px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.list li {
+  font-size: 12px;
+  padding-left: 90px;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.list li:before {
+  content: url("images/tick.svg");
+  margin-top: 10px;
+  position: relative;
+  top: 7px;
+}
+
+/*Subscription and price*/
+
+.plans {
+  font-weight: 400;
+  margin: 60px auto;
+  font-weight: 400;
+  width: 80%;
+}
+
+.plan {
+  display: flex;
+  height: 50px;
+  border: 1px solid transparent;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  cursor: pointer;
+}
+
+.plans input[type="radio"] {
+  border: 1px solid #ccc;
+  background: transparent;
+  appearance: none;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  position: relative;
+  margin: 0 8px 0;
+}
+
+.plans input[type="radio"]:checked::after {
+  content: "";
+  background: #7be9a3;
+  width: 6px;
+  height: 6px;
+  position: absolute;
+  left: 2px;
+  top: 2px;
+  border-radius: 50%;
+}
+
+.plan:hover {
+  border: 1px solid #599bf2;
+}
+
+.plan--selected {
+  background: #ffffff11;
+}
+
+.plan__title {
+  display: flex;
+  align-items: center;
+}
+
+.plan__price {
+  color: #7be9a3;
+  margin-right: 30px;
+}
+
+.plan__details {
+  display: flex;
+  width: 270px;
+}
+
+.plan__recommended {
+  background-color: #5345f5;
+  padding: 6px 13px;
+  border-radius: 8px;
+  letter-spacing: 1px;
+  margin-left: 20px;
+  text-transform: uppercase;
+}
+
+/*Button and guarantee text*/
+
+.last-part {
+  text-align: center;
+}
+
+.button {
+  background-color: #7be9a3;
+  border-radius: 50px;
+  color: #0b083c;
+  font-size: 12px;
+  font-weight: 800;
+  text-decoration: none;
+  padding: 11px 30px;
+  box-shadow: -2px 7px 20px 2px #0b083c;
+  border: none;
+  cursor: pointer;
+}
+
+.button:hover {
+  background: #a0ecbc;
+  transition: all 0.1s;
+}
+
+.last-part p {
+  font-size: 12px;
+  font-weight: 400;
+  padding-top: 30px;
 }
