@@ -1,11 +1,5 @@
-// Javascript goes here
 let selectedPlan = __DATA__.planSelector[1];
 
-/**
- * Idempotent function that re-renders plans based on input data
- *
- * @param {Array<any>} data
- */
 function renderPlans(data) {
   const plansElement = document.getElementById("plans");
   // this is not good, we should remove the onclick listeners on removal
